@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="@drawable/gradient_color_top"
+        ></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient_color_bottom"
+        android:orientation="horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/mPlay"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/sel_pause_or_play"
+            />
+        <TextView
+            android:id="@+id/mCurrentTime"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <SeekBar
+            android:id="@+id/mSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:max="0"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mDuration"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/mFullscreen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/icon_fullscreen" />
+    </LinearLayout>
+</FrameLayout>
